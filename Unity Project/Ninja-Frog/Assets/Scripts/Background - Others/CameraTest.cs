@@ -25,10 +25,9 @@ public class CameraTest : MonoBehaviour
 
         if (Input.GetKeyDown("2"))
         {
-
             transform.position = TreasureRoomRight;
+            
         }
-
-
+      
     }
 }
