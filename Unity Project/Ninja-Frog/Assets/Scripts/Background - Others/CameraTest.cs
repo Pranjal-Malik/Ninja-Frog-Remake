@@ -6,6 +6,7 @@ public class CameraTest : MonoBehaviour
 {
     private Vector3 StartingRoom = new Vector3(0,0,-10);
     private Vector3 TreasureRoomRight = new Vector3(30,0,-10);
+    private Vector3 Room_3 = new Vector3(-30, 0, -10);
 
     // Start is called before the first frame update
     void Start()
@@ -19,14 +20,20 @@ public class CameraTest : MonoBehaviour
         // Switches Cameras Through Rooms.
         if (Input.GetKeyDown("1"))
         {
-            transform.position = StartingRoom;
+           
+            transform.position = Room_3;
 
         }
 
         if (Input.GetKeyDown("2"))
         {
-            transform.position = TreasureRoomRight;
             
+            transform.position = StartingRoom;
+        }
+
+        if (Input.GetKeyDown("3"))
+        {
+            transform.position = TreasureRoomRight;
         }
       
     }
